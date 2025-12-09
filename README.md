@@ -37,8 +37,7 @@ podman build --no-cache --network none --tag my-image .
 ```bash
 mvn -DincludeMavenPlugins=true io.github.chains-project:maven-lockfile:generate
 hermeto fetch-deps maven
-hermeto generate-env ...
-podman build ...
+podman build --no-cache --network none --tag my-image .
 ```
 
 ## Appendix

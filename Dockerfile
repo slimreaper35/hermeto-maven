@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN . /app/hermeto.env && mvn package
+RUN . /app/hermeto.env && mvn clean install
 
 CMD ["java", "-jar", "target/hello-world-1.0-SNAPSHOT.jar"]
